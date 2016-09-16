@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><ns2:graph xmlns:ns2="hydrograph/engine/jaxb/main" name="job_2.xml">
+    <inputs xmlns:ns4="hydrograph/engine/jaxb/inputtypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="GRecords_01" phase="0" xsi:type="ns4:generateRecord">
+        <outSocket id="out0" type="out">
+            <schema name="Internal">
+                <field description="" name="DefaultField0" type="java.lang.String"/>
+                <field description="" name="DefaultField1" type="java.lang.String"/>
+                <field description="" name="DefaultField2" type="java.lang.String"/>
+                <field description="" name="DefaultField3" type="java.lang.String"/>
+            </schema>
+        </outSocket>
+        <recordCount value="11111111"/>
+    </inputs>
+    <outputs xmlns:ns4="hydrograph/engine/jaxb/outputtypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Discard_01" phase="0" xsi:type="ns4:discard">
+        <inSocket xmlns:ns5="hydrograph/engine/jaxb/otdiscard" fromComponentId="GRecords_01" fromSocketId="out0" fromSocketType="out" id="in0" type="in" xsi:type="ns5:type-output-inSocket-ino"/>
+    </outputs>
+</ns2:graph>
